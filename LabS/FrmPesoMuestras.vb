@@ -534,9 +534,7 @@ Public Class FrmPesoMuestras
                 cmdSQL.Parameters.AddWithValue("@CodPreparacion", resultados.Item("CodPreparacion"))
                 cmdSQL.Parameters.AddWithValue("@CodServicio", resultados.Item("CodServicio"))
                 cmdSQL.Parameters.AddWithValue("@PesoMuestra", resultados.Item("PesoMuestra"))
-                ' comandosql.Parameters.Add("@valor2",
-                ' resultados.Item("apellidos"))
-                ' comandosql.Parameters.Add("@valor3", resultados.Item("nombres"))
+
                 cmdSQL.ExecuteNonQuery()
                 cmdSQL.Parameters.Clear()
             Catch ex As Exception
