@@ -520,7 +520,6 @@ Public Class FrmPesoMuestras
 
         While resultados.Read
             Try
-                ' cmd.Parameters.AddWithValue("@IdDespacho", Convert.ToString(cmbDespacho.Text))
                 cmdSQL.Parameters.AddWithValue("@Muestra", resultados.Item("Muestra"))
                 cmdSQL.Parameters.AddWithValue("@Fecha", resultados.Item("Fecha"))
                 cmdSQL.Parameters.AddWithValue("@PesoHumedoMuestra", resultados.Item("PesoHumedoMuestra"))
