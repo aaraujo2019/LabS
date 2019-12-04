@@ -507,7 +507,6 @@ Public Class FrmPesoMuestras
         cmd.Connection = sqlConnectiondb
         sqlConnectiondb.Open()
         Dim resultados As OleDb.OleDbDataReader
-        'obtener resultados en datareader
         resultados = cmd.ExecuteReader
 
         'cmd.ExecuteNonQuery()
