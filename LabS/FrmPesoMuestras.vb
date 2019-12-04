@@ -508,8 +508,6 @@ Public Class FrmPesoMuestras
         sqlConnectiondb.Open()
         Dim resultados As OleDb.OleDbDataReader
         resultados = cmd.ExecuteReader
-
-        'cmd.ExecuteNonQuery()
         ' conexion SQL
         Dim cmdSQL As New SqlCommand
         cmdSQL.CommandType = CommandType.Text
